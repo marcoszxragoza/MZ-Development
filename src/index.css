@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Fiesto';
+  src: local('Fiesto');
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Fiesto", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Outlined text utility */
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+  color: transparent;
+}
+
+/* Shimmer effect */
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Tech Grid Pattern */
+.bg-tech-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
