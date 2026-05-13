@@ -411,7 +411,7 @@ export default function App() {
                       className="col-span-1 row-span-2 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 group/img"
                     >
                       <img 
-                        src="/audir8.png" 
+                        src={`${import.meta.env.BASE_URL}audir8.png`} 
                         alt="Precision Motor Project"
                         className="w-full h-full object-cover grayscale group-hover/img:grayscale-0 group-active/img:grayscale-0 transition-all duration-700 scale-110 group-hover/img:scale-100 group-active/img:scale-100"
                       />
@@ -425,7 +425,7 @@ export default function App() {
                       className="col-span-1 row-span-1 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 group/img"
                     >
                       <img 
-                        src="/restaurant.png" 
+                        src={`${import.meta.env.BASE_URL}restaurant.png`} 
                         alt="Trattoria Project"
                         className="w-full h-full object-cover grayscale group-hover/img:grayscale-0 group-active/img:grayscale-0 transition-all duration-700 scale-110 group-hover/img:scale-100 group-active/img:scale-100"
                       />
@@ -439,7 +439,7 @@ export default function App() {
                       className="col-span-1 row-span-1 relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 group/img"
                     >
                       <img 
-                        src="/clinica.png" 
+                        src={`${import.meta.env.BASE_URL}clinica.png`} 
                         alt="Sonrisa Local Project"
                         className="w-full h-full object-cover grayscale group-hover/img:grayscale-0 group-active/img:grayscale-0 transition-all duration-700 scale-110 group-hover/img:scale-100 group-active/img:scale-100"
                       />
